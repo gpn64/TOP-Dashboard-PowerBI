@@ -35,6 +35,8 @@ The report is organized as a guided narrative across 4 analytical sections, each
 ### Page 0 — Introduction
 Sets the analytical framing: the IOC charter, the paradox of unofficial medal tables, and the central question the dashboard answers. Designed to earn the reader's curiosity before showing a single chart.
 
+![Introduction](./screenshots/TOP0.PNG)
+
 ### Page 1 — Medal & Performance
 
 Compares **5 distinct medal counting methodologies** side by side:
@@ -49,6 +51,8 @@ Compares **5 distinct medal counting methodologies** side by side:
 
 Each metric includes a time-series evolution from Athens 1896 to the present, and a full country ranking table with in-row sparkbars for visual comparison across all 5 methods simultaneously.
 
+![Medal & Performance](./screenshots/TOP1.PNG)
+
 ### Page 2 — Organizations & Participations
 
 Explores the **host nation dimension** and participation history across all Summer Games editions:
@@ -59,6 +63,8 @@ Explores the **host nation dimension** and participation history across all Summ
 | **2.2 Olympic Participation** | Number of Olympic editions a country has participated in |
 
 Visualizations include a world map of host cities with bubble sizing, and a combined ranking table showing organization count vs. participation breadth side by side for all NOCs.
+
+![Organizations & Participations](./screenshots/TOP2.PNG)
 
 ### Page 3 — Sports & Athletes
 
@@ -71,6 +77,8 @@ Examines **what countries actually compete in**, not just how many medals they w
 | **3.3 Sports Coverage** | Share of Olympic disciplines a country competes in |
 
 Includes an interactive sport icon grid — clicking any sport filters all charts to that discipline. All metrics are available in a combined country ranking table.
+
+![Sports & Athletes](./screenshots/TOP3.PNG)
 
 ### Page 4 — True Olympic Powerhouse: Results
 
@@ -92,6 +100,8 @@ Preset configurations are provided for reference:
 | 🟢 **US Method** | Gold-heavy weighted count |
 
 The podium updates live based on user-selected criteria — making the answer to "who wins the Olympics" genuinely dependent on what you value.
+
+![Results](./screenshots/TOP4.PNG)
 
 ---
 
@@ -133,25 +143,6 @@ The report uses a **star schema** built on the [Kaggle — 120 Years of Olympic 
 **Normalization logic** — the "Medal by Athletes" metric normalizes medal counts against delegation size per edition, not globally, to account for the dramatic growth of Olympic participation over 120 years. Raw normalization against a fixed denominator would severely distort early-era results.
 
 **Ranking stability** — the composite score on the Results page uses rank-based scoring (1–5 stars per metric) rather than raw values, ensuring that metrics with very different scales (e.g., total medals vs. number of organizations) contribute proportionally to the final ranking.
-
----
-
-## Screenshots
-
-### Introduction — Framing the Question
-![Introduction](./screenshots/TOP0.PNG)
-
-### Page 1 — Medal & Performance
-![Medal & Performance](./screenshots/TOP1.PNG)
-
-### Page 2 — Organizations & Participations
-![Organizations & Participations](./screenshots/TOP2.PNG)
-
-### Page 3 — Sports & Athletes
-![Sports & Athletes](./screenshots/TOP3.PNG)
-
-### Page 4 — True Olympic Powerhouse: Results
-![Results](./screenshots/TOP4.PNG)
 
 ---
 
