@@ -109,7 +109,7 @@ The podium updates live based on user-selected criteria — making the answer to
 
 The report uses a **star schema** built on the [Kaggle — 120 Years of Olympic History](https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-and-results) dataset, enriched and reshaped in Power Query.
 
-![Data Model](./screenshots/TOP_DM.PNG)
+![Data Model](./screenshots/TOPDM.PNG)
 
 **Fact tables:**
 - `Sports Events & Medals` — core grain: one row per athlete per event per edition
